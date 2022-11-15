@@ -1,0 +1,18 @@
+{% load static %}
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="POST">
+           {% csrf_token %} 
+<br><br><br><br><br><br><br><br><br><br>
+           <center><a class="nav-link scrollto" href="https://www.instamojo.com/accounts/register/">DONATE</a></center>
+        </form>
+        <center> <a href="{% url 'home1' %}">Back To Home</a></center>
+    </body>
+</html>
